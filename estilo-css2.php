@@ -99,6 +99,7 @@ echo "
 
 
             .mleft{margin-left: 0px; padding-left: 0px;}
+
             .ofertas{width: 1024px; margin-bottom: 10px; overflow: hidden;}
             .ofertas .menu{display: block; overflow: auto; width: 200px; height: 430px; float: left; background: ".$Loja_Cor_fundo_menu.";}
             .ofertas .destaques{display: block; width: 814px;  height: 430px; background: ".$Loja_Cor_fundo_destaques."; float: left;margin-left: 10px; border: 2px solid #fff;}
@@ -112,11 +113,11 @@ echo "
             .menu ul li.item-menu a{display: block; padding: 5px; background: ".$Loja_Cor_fundo_menu."; color:".$Loja_Cor_texto_menu.";}
             .menu ul li.item-menu a:hover{display: block; background: ".$Loja_Cor_fundo_menu_hover."; color: ".$Loja_Cor_texto_menu_hover."; padding: 5px;}
              
-            .carousel-inner .item{background: #fff;}    
-            .carousel-indicators li{color: #ccc;}                                                    
+            .carousel-inner .item{background: #fff;}
+            .carousel-indicators li{color: #ccc;}
             .carousel-inner .item .item-imagem{display: block; float: left; width: 400px; height: 390px; margin: 20px; margin-right: 0px; position: relative;}
             .carousel-inner .item .item-imagem a{display: block; width: 395px; height: 300px; text-align: center; position: absolute; top: 50%; bottom: 50%; margin: -150px; margin-left: 0px;  overflow: hidden; }
-            .carousel-inner .item .item-imagem a img{display: block; background: #000;  border: none; padding: 0px;}                            
+            .carousel-inner .item .item-imagem a img{display: block; background: #000;  border: none; padding: 0px; width: 350px;}                            
             .carousel-inner .item .item-descricao{display: block; float: left; width: 370px; height: 390px; margin: 20px; padding: 30px 0px;  margin-right: 0px; position: relative;}
             .carousel-inner .item .item-descricao h1{color: ".$Loja_Cor_texto_preco."; font-weight: bold;}
             .carousel-control.right{right: 0;left: auto;background-image: none;}
