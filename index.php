@@ -86,10 +86,10 @@ if($lojaExiste){
         $Loja_Nivel_Menu = $dadosLoja["nivel_menu"];
         $Loja_Responsabilidades = $dadosLoja["responsabilidades"];
         $Loja_Informacoes_Rodape = $dadosLoja["informacoes_rodape"];
-	$Loja_Link_Banner1 = $dadosLoja["link_banner1"];
-	$Loja_Link_Banner2 = $dadosLoja["link_banner2"];
-	$Loja_Link_Banner3 = $dadosLoja["link_banner3"];
-	$Loja_Link_Banner4 = $dadosLoja["link_banner4"];
+    $Loja_Link_Banner1 = $dadosLoja["link_banner1"];
+    $Loja_Link_Banner2 = $dadosLoja["link_banner2"];
+    $Loja_Link_Banner3 = $dadosLoja["link_banner3"];
+    $Loja_Link_Banner4 = $dadosLoja["link_banner4"];
     }
 
     
@@ -236,116 +236,6 @@ if($lojaExiste){
        
         <link href="<?php echo $baseURL;?>/estilo-css.php?Loja_id=<?php echo $Loja_id;?>" rel="stylesheet">
 
-        <style type="text/css">
-
-            .page{padding-right: 5px; padding-left: 5px;}
-            .row{margin: 0px; padding: 0px; }
-            
-            @media (max-width: 600px) {          
-                .col-2, .col-10{margin: 0px; padding: 0px;}      
-
-                .topo, .menu{display: block; width: 100%;  padding: 0px; margin: 0px; margin-bottom: 10px;}
-
-                .conteudo, .propaganda{margin: 0px; border: 0px solid #000;}                
-                .page, .topo, .ofertas, .rodape, .pesquisa{width: 100%;}
-                #collapseFormBusca, #collapseMenu{clear: both;}
-                #collapseMenu{background: #fff;}
-
-                .propaganda{display: block; width: 100%; height: 202px; overflow: auto;}
-                .lista_banners{display: block; width: 1024px;}
-                .conteudo{width: 100%; clear: both; }
-                
-                .ofertas{width: 100%; margin-bottom: 10px; border: 0px solid #000;}
-                .ofertas .menu{display: none; overflow: auto; width: 100%; height: 430px; background: #fff;}
-                .ofertas .destaques{clear: both; display: block; width: 100%;  height: 630px; background: #fff; border: 1px solid #000; margin: 0px; padding: 0px;}
-                .btn-busca{background: #900; color: #fff;}
-
-                .menu{width: 100%;}
-                /*PESQUISA*/
-                .pesquisa{ border: 0px solid #f00;}
-                .pesquisa-form{display: block; float: none;}
-                .menu-topo{display: block; position: absolute; top: 20px; right: 10px;
-                .destaques{ display: block; width: 100%; background: #ff0000; height: 800px; float: none; border: 0px solid #f00; overflow: hidden;}
-                /*CARROSEL*/
-                
-                
-                .carousel-indicators li{color: #ccc;}
-                .carousel-inner .item{ display: block; width: 400px; height: 390px; }
-                .carousel-inner .item .item-imagem{display: block; float: left; width: 400px; height: 100px; margin: 20px; margin-right: 0px; position: relative;}
-                .carousel-inner .item .item-imagem a{display: block; width: 395px; height: 300px; text-align: center; position: absolute; top: 50%; bottom: 50%; margin: -150px; margin-left: 0px;  overflow: hidden; border: 1px solid green; }
-                .carousel-inner .item .item-imagem a img{display: block; background: #000;  border: none; padding: 0px; background: #f00; width: 200px;}
-                .carousel-inner .item .item-descricao{display: none; float: left; width: 370px; height: 390px; margin: 20px; padding: 30px 0px;  margin-right: 0px; position: relative;}
-                .carousel-inner .item .item-descricao span .descricao_p{display: block;}
-                .carousel-control.right{right: 0;left: auto;background-image: none;}
-                .carousel-control.left{right: auto;left: 0;background-image: none;}
-                .carousel-indicators .active {width: 10px; height: 10px; margin: 1px; background-color: #ccc;}
-                .carousel-indicators li {display: inline-block; width: 10px;height: 10px; margin: 1px;cursor: pointer;text-indent: -999px;background-color: #fff;background-color: rgba(0,0,0,0);border: 2px solid #ccc;border-radius: 10px;}
-
-                /*LISTA DE PRODUTOS*/
-                .lista_produtos{list-style: none; display: block;padding: 0px;}                                    
-                .lista_produtos .items{display: block; float: left; width: 150px; height: 250px; border: 0px solid #000; text-align: center; }                        
-                .lista_produtos .items .imagem_produto{ display: block; width: 100%; height: 105px;  overflow: hidden; text-align: center;}
-                .lista_produtos .items .descricao{display: block; width: 100%; height: 105px;}
-                .lista_produtos .items .descricao .nome_produto{font-size: 12px; text-decoration: none; -webkit-line-clamp: 2; -webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;display: -webkit-box; height: 20px; }
-                .lista_produtos .items .descricao .preco_de{font-size: 11.1px; display: block; overflow: hidden; height: 20px;}
-                .lista_produtos .items .descricao .preco_novo{font-size: 26.4px; font-weight: bold; display: block; line-height: 33px;   overflow: hidden; height: 32px;}
-                .lista_produtos .items .descricao .parcelas{font-size:11.1px;  line-height:15.125px; overflow: hidden; height: 20px;}
-                
-                .lista_superbanner{display: none;}
-                .banner2{display: none;}
-            
-            }
-            @media (max-width: 320px) {                 
-
-                .lista_produtos{list-style: none; display: block;padding: 0px;}                                    
-                .lista_produtos .items{display: block; float: left; width: 120px; height: 250px; border: 0px solid #000; text-align: center; }                        
-                .lista_produtos .items .imagem_produto{ display: block; width: 100%; height: 105px;  overflow: hidden; text-align: center;}
-                .lista_produtos .items .descricao{display: block; width: 100%; height: 105px;}
-                .lista_produtos .items .descricao .nome_produto{font-size: 12px; text-decoration: none; -webkit-line-clamp: 2; -webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;display: -webkit-box; height: 20px; }
-                .lista_produtos .items .descricao .preco_de{font-size: 11.1px; display: block; overflow: hidden; height: 20px;}
-                .lista_produtos .items .descricao .preco_novo{font-size: 26.4px; font-weight: bold; display: block; line-height: 33px;   overflow: hidden; height: 32px;}
-                .lista_produtos .items .descricao .parcelas{font-size:11.1px;  line-height:15.125px; overflow: hidden; height: 20px;}
-                
-            }
-            @media (min-width: 361px) and (max-width: 435px) { 
-                .lista_produtos{list-style: none; display: block;padding: 0px;}                                    
-                .lista_produtos .items{display: block; float: left; width: 191px; height: 250px; border: 0px solid #000; text-align: center; }                        
-                .lista_produtos .items .imagem_produto{ display: block; width: 100%; height: 105px;  overflow: hidden; text-align: center;}
-                .lista_produtos .items .descricao{display: block; width: 100%; height: 105px;}
-                .lista_produtos .items .descricao .nome_produto{font-size: 12px; text-decoration: none; -webkit-line-clamp: 2; -webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;display: -webkit-box; height: 20px; }
-                .lista_produtos .items .descricao .preco_de{font-size: 11.1px; display: block; overflow: hidden; height: 20px;}
-                .lista_produtos .items .descricao .preco_novo{font-size: 26.4px; font-weight: bold; display: block; line-height: 33px;   overflow: hidden; height: 32px;}
-                .lista_produtos .items .descricao .parcelas{font-size:11.1px;  line-height:15.125px; overflow: hidden; height: 20px;}
-                
-            }
-
-            @media (min-width: 321px) and (max-width: 360px) { 
-                .lista_produtos{list-style: none; display: block;padding: 0px;}                                    
-                .lista_produtos .items{display: block; float: left; width: 153px; height: 250px; border: 0px solid #000; text-align: center; }                        
-                .lista_produtos .items .imagem_produto{ display: block; width: 100%; height: 105px;  overflow: hidden; text-align: center;}
-                .lista_produtos .items .descricao{display: block; width: 100%; height: 105px;}
-                .lista_produtos .items .descricao .nome_produto{font-size: 12px; text-decoration: none; -webkit-line-clamp: 2; -webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;display: -webkit-box; height: 20px; }
-                .lista_produtos .items .descricao .preco_de{font-size: 11.1px; display: block; overflow: hidden; height: 20px;}
-                .lista_produtos .items .descricao .preco_novo{font-size: 26.4px; font-weight: bold; display: block; line-height: 33px;   overflow: hidden; height: 32px;}
-                .lista_produtos .items .descricao .parcelas{font-size:11.1px;  line-height:15.125px; overflow: hidden; height: 30px;}
-                
-            }
-
-            @media (min-width: 481px) and (max-width: 768px) {  }            
-            @media (min-width: 768px) and (max-width: 980px) {  }            
-            @media (min-width: 781px) { 
-                .ofertas{width: 1024px; margin-bottom: 10px; overflow: hidden;}
-                .ofertas .menu{display: block; overflow: auto; width: 200px; height: 430px; float: left; background: #fff;}
-                .ofertas .destaques{display: block; width: 814px;  height: 430px; background: #fff; float: left;margin-left: 10px; border: 2px solid #fff;}
-                .btn-busca{background: #900; color: #fff;}
-
-                .conteudo, .rodape{width: 1024px; clear: both; }
-
-            }                        
-
-        </style>
-
-    
 
    </head>
     <body>
@@ -376,9 +266,8 @@ if($lojaExiste){
                     </div>
                     <div class="menu-topo">
                         <ul>
-                            <li><a href="#" data-toggle="modal" data-target="#localizacao"><span class="glyphicon glyphicon-pushpin"></span></a></li>
-                            <li><a href="#" data-toggle="modal" data-target="#contato"><span class="glyphicon glyphicon-phone-alt"></span></a></li>
-                            <li><a href="#" class="btn-menu-show"><span class="glyphicon glyphicon-menu-hamburger"></span></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#localizacao"><span class="glyphicon glyphicon-pushpin"></span> Localização</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#contato"><span class="glyphicon glyphicon-phone-alt"></span> Contato</a></li>
                         </ul>
                     </div>
                 </div>
@@ -430,7 +319,7 @@ if($lojaExiste){
                                 <span class="item-imagem">                                    
                                     <a href="<?php echo $url_loja;?>/produto/<?php echo $itemCarrossel["url_amigavel"].'-'.$itemCarrossel["id"];?>.html">                             
                                         <center>
-                                            <img src="<?php echo $imagem;?>" alt="<?php echo $itemCarrossel["titulo"];?>">
+                                            <img src="<?php echo $imagem;?>" alt="<?php echo $itemCarrossel["titulo"];?>" width="350px;">
                                         </center>
                                     </a>
                                 </span>
@@ -443,7 +332,7 @@ if($lojaExiste){
                                             <?php if($itemCarrossel["parcelas"]>0 && $itemCarrossel["parcelas"]!=""){ ?>
                                             <p>ou em <?php echo $itemCarrossel["parcelas"];?>x de <?php echo number_format(($itemCarrossel["preco"]/$itemCarrossel["parcelas"]),2,',','');?> sem juros</p>
                                             <?php } ?>
-                                            <p class="descricao_p"><?php echo str_replace("\n", "<br>", $itemCarrossel["descricao"]); ?></p>
+                                            <p><?php echo str_replace("\n", "<br>", $itemCarrossel["descricao"]); ?></p>
                                         </span>           
                                     </a>                 
                                 </span>
@@ -469,16 +358,16 @@ if($lojaExiste){
             <div class="row propaganda margin-top-10">
                 <ul class="lista_banners">
                     <li class="items">                  
-        			<?php if($Loja_Link_Banner1!='#'){?>
-        			<a href="<?php echo $Loja_Link_Banner1;?>">      
+                    <?php if($Loja_Link_Banner1!='#'){?>
+                    <a href="<?php echo $Loja_Link_Banner1;?>">      
                                 <img src="http://perolanegocio.com/imagens/cliente/<?php echo $Loja_Banner1;?>" class = "img-responsive"/>                        
-        			</a>
-        			<?php } else{?>
-        			<img src="http://perolanegocio.com/imagens/cliente/<?php echo $Loja_Banner1;?>" class="img-responsive" />
-         			<?php }?>
+                    </a>
+                    <?php } else{?>
+                    <img src="http://perolanegocio.com/imagens/cliente/<?php echo $Loja_Banner1;?>" class="img-responsive" />
+                    <?php }?>
                     </li>
                     <li class="items margem-l-10">                        
-        			<?php if($Loja_Link_Banner2!='#'){?>
+                    <?php if($Loja_Link_Banner2!='#'){?>
                     <a href="<?php echo $Loja_Link_Banner2;?>">      
                                 <img src="http://perolanegocio.com/imagens/cliente/<?php echo $Loja_Banner2;?>" class = "img-responsive"/>                        
                     </a>
@@ -488,7 +377,7 @@ if($lojaExiste){
             
                     </li>
                     <li class="items margem-l-10">                        
-			         <?php if($Loja_Link_Banner3!='#'){?>
+                     <?php if($Loja_Link_Banner3!='#'){?>
                     <a href="<?php echo $Loja_Link_Banner3;?>">      
                                 <img src="http://perolanegocio.com/imagens/cliente/<?php echo $Loja_Banner3;?>" class = "img-responsive"/>                        
                     </a>
@@ -511,12 +400,11 @@ if($lojaExiste){
                     <li class="items">  
                         <a href="<?php echo $url_loja;?>/produto/<?php echo $itemProdutos["url_amigavel"].'-'.$itemProdutos["id"];?>.html">                             
                             <div class="imagem_produto"><img src="<?php echo $imagem;?>" align="center" /></div>                            
-                            <span class="descricao">
-                                <span class="nome_produto"><?php echo $itemProdutos["titulo"]?></span>                                                                                    
-                                <span class="preco_de"><?php echo ($itemProdutos["preco_de"]!=0?"De: <strike>R$ ".number_format($itemProdutos["preco_de"], 2, ',', '.')."</strike>":"");?></span>                        
-                                <span class="preco_novo"><?php echo ($itemProdutos["preco"]!=0?"R$ ".number_format($itemProdutos["preco"], 2, ',', '.'):"À combinar");?></span>                                                    
-                                <span class="parcelas"><?php if($itemProdutos["parcelas"]>0 && $itemProdutos["parcelas"]!=""){ ?>Parcele em <?php echo $itemProdutos["parcelas"];?>x de <?php echo number_format(($itemProdutos["preco"]/$itemProdutos["parcelas"]),2,',','');?> sem juros<?php } ?></span>
-                            </span>
+                            <span class="nome_produto"><?php echo $itemProdutos["titulo"]?></span>                                                                                    
+                            <span class="preco_de"><?php echo ($itemProdutos["preco_de"]!=0?"De: <strike>R$ ".number_format($itemProdutos["preco_de"], 2, ',', '.')."</strike>":"");?></span>                        
+                            <span class="preco_novo"><?php echo ($itemProdutos["preco"]!=0?"R$ ".number_format($itemProdutos["preco"], 2, ',', '.'):"À combinar");?></span>                                                    
+                            <span class="parcelas"><?php if($itemProdutos["parcelas"]>0 && $itemProdutos["parcelas"]!=""){ ?>Parcele em <?php echo $itemProdutos["parcelas"];?>x de <?php echo number_format(($itemProdutos["preco"]/$itemProdutos["parcelas"]),2,',','');?> sem juros<?php } ?></span>
+                            
                         </a>
                     </li>
                     <?php        
@@ -556,10 +444,10 @@ if($lojaExiste){
             <!--FIM PAGINA BUSCA-->
             <?php } ?>
             <?php if($Loja_Banner4!=""){ ?>
-             <div class="row propaganda banner2 margin-top-10">
+             <div class="row propaganda margin-top-10">
                 <ul class="lista_superbanner">
                     <li class="items">                        
-			         <?php if($Loja_Link_Banner4!='#'){?>
+                     <?php if($Loja_Link_Banner4!='#'){?>
                     <a href="<?php echo $Loja_Link_Banner4;?>">      
                                 <img src="http://perolanegocio.com/imagens/cliente/<?php echo $Loja_Banner4;?>" class = "img-responsive"/>                        
                     </a>
@@ -633,15 +521,6 @@ if($lojaExiste){
                 beforeSend:function(){                    
                 }
             });
-        });
-
-        $(".btn-menu-show").click(function(){            
-            if($(".menu").css("display")=="none"){                
-                $(".menu").show("slow");
-            }else{                
-                $(".menu").hide();
-            }
-            
         });
  
     </script>
