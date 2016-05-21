@@ -1,0 +1,25 @@
+Options -MultiViews
+
+AddDefaultCharset utf-8
+AddCharset utf-8 .html .php .css .js
+DefaultLanguage en-US
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+#RewriteCond %{HTTP_HOST} !^(www|ftp|mail|localhost)\.perolanegocio\.com$ [NC]
+#RewriteCond %{HTTP_HOST} ^(.*)\.perolanegocio\.com$ [NC]
+#RewriteRule ^(.*)$ http://www.perolanegocio.com/loja/index.php?loja=%1 [L,NC]
+
+RewriteRule ^produto/([a-zA-Z0-9_-]+).html$ detalhes.php?produto=$1 [L]
+RewriteRule ^busca/(.+)$ index.php?palavra_chave=$1 [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?nivel1=$1&nivel2=$2 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?nivel3_slug=$1 [L]
+#RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?loja=$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule !\.(ico|js|gif|jpeg|jpg|png|css|swf|flv|php)$ index.php [L]
+</IfModule>
