@@ -152,7 +152,7 @@ echo "
             .negociar-shared{display: block; width: 470px; height: 25px;}
             .topo-negociar{display: block; width: 120px; height: 25px; float: left;}
             .shared-box{display: block; width: 340px; height: 25px; margin-left: 5px; float: left;}
-
+                        /*dfjhsdkjf**/
             ";
 ?>
 
